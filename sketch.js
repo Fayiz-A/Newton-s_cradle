@@ -37,10 +37,10 @@ function setup() {
 
 
 function draw() {
-	Engine.update(engine);
+	Engine.update(engine);//updates the engine continuously
 
-  	rectMode(CENTER);
-  	background(230);
+  	rectMode(CENTER);//tells the computer to make the rectangle relative to its center
+  	background(230);//clears the background
   
 	roof.display();
 
