@@ -59,7 +59,9 @@ function draw() {
 	if(keyWentDown(UP_ARROW)){
 		//Makes the pendulum move to the left direction when up_arrow in pressed
 		Body.applyForce(bobArray[0].body, bobArray[0].body.position, {x: -6, y: 0});
-	}
+	} 
+
+	displayText("Press up_arrow to apply force on the first pendulum", "black", 400, 200);
 }
 
 
