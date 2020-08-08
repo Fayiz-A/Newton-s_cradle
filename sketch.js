@@ -47,14 +47,17 @@ function draw() {
 	drawSprites();
 	  
 	for(i = 0; i < ropeArray.length; i++){
+		//Instead of writing rope.display() 5 times, I created an array and put it inside a loop
 		ropeArray[i].display();
 	}
 	
 	for(i = 0; i < bobArray.length; i++){
+		//This is an alternative to writing bob.display() 5 times
 		bobArray[i].display();
 	}
 
 	if(keyWentDown(UP_ARROW)){
+		//Makes the pendulum move to the left direction when up_arrow in pressed
 		Body.applyForce(bobArray[0].body, bobArray[0].body.position, {x: -6, y: 0});
 	}
 }
